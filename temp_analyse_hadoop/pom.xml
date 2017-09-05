@@ -4,35 +4,32 @@
   <artifactId>temp_analyse_hadoop</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <dependencies>
+  
+	<dependencies>
 		<!-- 单元测试工具junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client -->
 		<dependency>
-    		<groupId>org.apache.hadoop</groupId>
-    		<artifactId>hadoop-client</artifactId>
-    		<version>2.7.3</version>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
+			<version>2.7.3</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
-		<plugins> 
-      	  <plugin>  
-            <groupId>org.apache.maven.plugins</groupId>  
-            <artifactId>maven-war-plugin</artifactId>    
-            <configuration>  
-                <failOnMissingWebXml>false</failOnMissingWebXml>  
-            </configuration>  
-      	  </plugin>  
-	
+		<finalName>temp-analyse-hadoop</finalName>
+		<plugins>
+		    <plugin>  
+           		 <groupId>org.apache.maven.plugins</groupId>  
+           		 <artifactId>maven-war-plugin</artifactId>    
+            	 <configuration>  
+                 		<failOnMissingWebXml>false</failOnMissingWebXml>  
+                 </configuration>  
+      	    </plugin> 
 			<!-- 资源文件拷贝插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

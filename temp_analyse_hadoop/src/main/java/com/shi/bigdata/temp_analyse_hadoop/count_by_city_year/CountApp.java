@@ -1,4 +1,4 @@
-package com.shi.bigdata.temp_analyse_hadoop.count_by_city_month;
+package com.shi.bigdata.temp_analyse_hadoop.count_by_city_year;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;
@@ -44,7 +44,7 @@ public class CountApp {
 		Job job = Job.getInstance();
 		
 		//设置任务名,任务类
-		job.setJobName("count_by_city_month");
+		job.setJobName("count_by_city_year");
 		job.setJarByClass(CountApp.class);
 		
 		//设置输入
